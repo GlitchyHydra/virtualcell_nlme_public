@@ -1,0 +1,39 @@
+{
+ "X": {
+  "data": "8d6c15870dca5a1b1fa7e089c0ca8da32fc6dda7e9464378d0dcc3ad54411284",
+  "indices": "6103a786ba9b62285ff516d0d3e2a19bfd1b1d0e7191de95c416db3e90a69274",
+  "indptr": "edb6323186773a5be09d1967d87aee610b6963433882b2def4932bdd4744a103",
+  "nnz": 442212576,
+  "obs_target_gene": "74698cd711fa5c9809587e3cee0096e7d595336b44721e66c9cdb477c5ca6a36",
+  "shape": [
+   50400,
+   18080
+  ],
+  "var": "0ed3e59ce347a6a72dd47135aff8320b649c2bcfbc85a8f5a806a8e5fcbed9f0"
+ },
+ "argv": [
+  "--rung",
+  "v3",
+  "--transform",
+  "z",
+  "--scale",
+  "1.5",
+  "--seed",
+  "0",
+  "--tag",
+  "golden_e4"
+ ],
+ "log": [
+  "controls (38176, 18080), nnz/cell 8750",
+  "lines {'K562': 1.0, 'CD4_Rest': 1.0, 'HCT116': 1.0, 'HEK293T': 1.0}",
+  "effect |log2| quantiles 50/99/99.99%: [0.096 0.464 1.692]",
+  "12657 of 12816 universe genes are on the H1 axis; rung v3",
+  "   20/126 targets",
+  "   40/126 targets",
+  "   60/126 targets",
+  "   80/126 targets",
+  "   100/126 targets",
+  "   120/126 targets",
+  "wrote D:\\Projects\\Competitions\\Virtual Cell\\data\\h1_benchmark\\pred_golden_e4.h5ad (0.00 GB): 50400 cells x 18080 genes, nnz/cell 8774"
+ ]
+}

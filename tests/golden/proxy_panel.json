@@ -1,0 +1,62 @@
+{
+ "controls": "data/controls_final",
+ "log": [
+  "tables D:\\Projects\\Competitions\\Virtual Cell\\eda\\out; panel controls_final: 300 targets, 300 in the tables; 12816 genes",
+  "{'held out': 'K562', 'targets': 277, 'pds raw': 0.7480641448228954, 'pds part': 0.08649377434550048, 'DE part': 0.04759887678844683, 'est': 0.1340926511339473}",
+  "{'held out': 'CD4_Rest', 'targets': 283, 'pds raw': 0.6641480590431796, 'pds part': 0.05723433021031368, 'DE part': 0.06307988816970907, 'est': 0.12031421838002275}",
+  "{'held out': 'HCT116', 'targets': 297, 'pds raw': 0.741036491036491, 'pds part': 0.0840434069164892, 'DE part': 0.07219789963564394, 'est': 0.15624130655213314}",
+  "{'held out': 'HEK293T', 'targets': 298, 'pds raw': 0.7198043070526291, 'pds part': 0.0766402744256029, 'DE part': 0.0584029118980163, 'est': 0.1350431863236192}",
+  "{'held out': 'H1', 'targets': 126, 'pds raw': 0.9029206349206349, 'pds part': 0.14048836642978904, 'DE part': 0.07051567165119427, 'est': 0.2110040380809833}",
+  "",
+  "held out  targets  pds raw  pds part  DE part      est",
+  "    K562      277 0.748064  0.086494 0.047599 0.134093",
+  "CD4_Rest      283 0.664148  0.057234 0.063080 0.120314",
+  "  HCT116      297 0.741036  0.084043 0.072198 0.156241",
+  " HEK293T      298 0.719804  0.076640 0.058403 0.135043",
+  "      H1      126 0.902921  0.140488 0.070516 0.211004",
+  "",
+  "mean est over the 4 panel lines (H1 excluded, it scores its own benchmark targets): 0.1364"
+ ],
+ "rows": [
+  {
+   "DE part": 0.04759887678844683,
+   "est": 0.1340926511339473,
+   "held out": "K562",
+   "pds part": 0.08649377434550048,
+   "pds raw": 0.7480641448228954,
+   "targets": 277
+  },
+  {
+   "DE part": 0.06307988816970907,
+   "est": 0.12031421838002275,
+   "held out": "CD4_Rest",
+   "pds part": 0.05723433021031368,
+   "pds raw": 0.6641480590431796,
+   "targets": 283
+  },
+  {
+   "DE part": 0.07219789963564394,
+   "est": 0.15624130655213314,
+   "held out": "HCT116",
+   "pds part": 0.0840434069164892,
+   "pds raw": 0.741036491036491,
+   "targets": 297
+  },
+  {
+   "DE part": 0.0584029118980163,
+   "est": 0.1350431863236192,
+   "held out": "HEK293T",
+   "pds part": 0.0766402744256029,
+   "pds raw": 0.7198043070526291,
+   "targets": 298
+  },
+  {
+   "DE part": 0.07051567165119427,
+   "est": 0.2110040380809833,
+   "held out": "H1",
+   "pds part": 0.14048836642978904,
+   "pds raw": 0.9029206349206349,
+   "targets": 126
+  }
+ ]
+}

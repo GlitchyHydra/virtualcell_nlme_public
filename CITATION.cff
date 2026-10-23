@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use or refer to this work, please cite it as below."
+title: "Predicting CRISPRi knockdowns in unseen cell lines by random-effects pooling of public Perturb-seq screens (Virtual Cell Challenge 2026)"
+authors:
+  - family-names: Kvan
+    given-names: Valerii
+date-released: 2026-11-05
+license: MIT
+repository-code: "https://github.com/GlitchyHydra/virtualcell_nlme"
+keywords:
+  - Perturb-seq
+  - CRISPRi
+  - single-cell
+  - meta-analysis
+  - random effects
+  - Virtual Cell Challenge

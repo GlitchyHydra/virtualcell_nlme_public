@@ -1,0 +1,23 @@
+# F18: the variant with the drug-adjusted U-87 MG table (H54; data/submission/final_u87x.vcc, recommended replacement).
+# Identical to final_def.toml except U87x for E (D and F are the same method as F15).
+# Golden: tests/golden/build_final_def_u87x.json (the first targets equal data/submission/pred_final_u87x.h5ad).
+tag = "final_u87x"
+controls = "data/controls_final"
+seed = 0
+
+[model]
+rung = "v3"
+transform = "z"                       # standardised effect (H11)
+scale = 1.5
+kappa = 1.0
+min_effect = 0.02                     # log2 floor (H29)
+bin_mult = [1.5, 1.25, 1.0, 1.0, 0.8] # by the gene's control CPM in the context: <15, 15-40, 40-120, 120-400, >400 (H36)
+neighbour = 0.15                      # promoter-neighbour cap (H37)
+sources = ["K562", "CD4_Rest", "HCT116", "HEK293T", "H1"]
+
+[model.line_weights]                  # H38, H40
+KOLF = 0.25
+Pan_H1 = 0.25
+
+[model.context_weights.E]             # same cell type at weight 4 (H44, H47, H53)
+U87x = 4.0

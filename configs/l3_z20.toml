@@ -1,0 +1,15 @@
+# L3: leaderboard 0.158 (PooledEffects-Atlas-z2.0, v3z20_h1.vcc, 2026-10-20): scale 2.
+# Settings as uploaded; tables of the "abc" snapshot. Only L5 is checked to reproduce its upload bit for bit (the earlier
+# uploads used the tables of their day, which may differ slightly from the snapshot).
+tag = "v3z20_h1"
+controls = "data/controls"
+tables = "OUT/val_tables"
+gene_lines = "OUT/gene_lines_abc.csv"
+seed = 0
+
+[model]
+rung = "v3"
+transform = "z"
+scale = 2.0
+min_effect = 0.05
+sources = ["K562", "CD4_Rest", "HCT116", "HEK293T", "H1"]

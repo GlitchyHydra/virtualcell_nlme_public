@@ -1,0 +1,15 @@
+Copyright (c) 2026 Valerii Kvan
+
+The documentation of this repository (the files in docs/, README.md and the
+README files of src/vcell/ and experiments/) is licensed under the Creative
+Commons Attribution-NonCommercial-NoDerivatives 4.0 International licence
+(CC BY-NC-ND 4.0): https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+You may read, copy and share these texts unchanged, for non-commercial
+purposes, if you credit Valerii Kvan and link to the repository and the
+licence. You may not distribute modified versions or use the texts
+commercially without permission.
+
+The source code is licensed separately under the MIT licence (../LICENSE).
+Third-party datasets and papers referred to in these documents keep their own
+licences and are not distributed here.

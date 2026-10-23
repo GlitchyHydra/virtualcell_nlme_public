@@ -1,0 +1,23 @@
+# F13: the final D/E/F entry 5wVGrsnP45u0wFCEeQun ("pooled-z-atlas", uploaded 2026-10-22; EXPERIMENT_LOG F13-F15).
+# L5 settings + the same-cell-type rule for E (U-87 MG table at weight 4, F8). Do not add a centring step (L6: 0.1683 < 0.1705).
+# Golden: tests/golden/build_final_def.json (the first targets equal data/submission/pred_final.h5ad bit for bit).
+tag = "final"
+controls = "data/controls_final"
+seed = 0
+
+[model]
+rung = "v3"
+transform = "z"                       # standardised effect (H11)
+scale = 1.5
+kappa = 1.0
+min_effect = 0.02                     # log2 floor (H29)
+bin_mult = [1.5, 1.25, 1.0, 1.0, 0.8] # by the gene's control CPM in the context: <15, 15-40, 40-120, 120-400, >400 (H36)
+neighbour = 0.15                      # promoter-neighbour cap (H37)
+sources = ["K562", "CD4_Rest", "HCT116", "HEK293T", "H1"]
+
+[model.line_weights]                  # H38, H40
+KOLF = 0.25
+Pan_H1 = 0.25
+
+[model.context_weights.E]             # same cell type at weight 4 (H44, H47, H53)
+U87 = 4.0

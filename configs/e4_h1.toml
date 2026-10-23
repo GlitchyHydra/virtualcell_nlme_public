@@ -1,0 +1,13 @@
+# E4: the H1-benchmark reference (official scorer, H1 held out): v3, standardised z x1.5, four source lines, floor 0.05.
+# Scored 0.121 / 0.131 (seeds 0 / 1) on the 11,961-gene tables, 0.130 / 0.124 on the current 12,816-gene tables (F11).
+# Golden: tests/golden/h1_e4.json (seed 0 file checksum). Used by `python -m vcell evaluate h1`.
+tag = "e4"
+controls = "data/controls_final"
+seed = 0
+
+[model]
+rung = "v3"
+transform = "z"
+scale = 1.5
+min_effect = 0.05
+sources = ["K562", "CD4_Rest", "HCT116", "HEK293T"]

@@ -1,0 +1,53 @@
+[project]
+name = "virtual-cell"
+version = "0.1.0"
+description = "Virtual Cell Challenge 2026: pipeline (qc, etl, model, evaluation) and experiments"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "h5py",
+    "matplotlib",
+    "requests",
+    "fsspec",
+    "aiohttp",
+    "jupyter",
+    "nbformat",
+    "nbconvert",
+    "ipykernel",
+    "google-crc32c>=1.9.0",
+    "cell-eval2>=0.18.0",
+    "pyarrow>=26.0.0",
+    "lightgbm>=4.7.0",
+    "huggingface-hub>=2.3.0",
+    "openpyxl>=3.1.5",
+    "anndata>=0.13.4",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/vcell"]
+
+[tool.uv]
+package = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Default run: unit tests only. `pytest -m data` adds the golden regression tests on the real files (about 15 min),
+# `pytest -m release` the full-file and official-scorer checks (about 1 h). The last -m on the command line wins.
+addopts = "-m \"not data and not release\""
+filterwarnings = ["ignore::RuntimeWarning"]   # NaN slices in the pooling, as the old scripts silenced them
+markers = [
+    "data: needs data/ and the Stage 1 tables in OUT (golden regression against the old eda/ code)",
+    "release: full rebuild of the uploaded files and the official H1 scorer (slow)",
+]
+
+[dependency-groups]
+dev = [
+    "pyflakes>=4.0.3",
+    "pytest>=8",
+]

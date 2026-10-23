@@ -1,0 +1,95 @@
+{
+ "X": {
+  "data": "f36073c2d363d73b7e5eddcf09c761081e26f1ec63d7033abc56daff1df71103",
+  "indices": "1d799414c2ae5f6bd527e0be618eaa39ad48cfa902e0c8f880c46dbc5c3102d2",
+  "indptr": "9a8b8790c70ae1d7a874c279da4bb31c5672c782398e04eec97c2f7b8bc7b68c"
+ },
+ "argv": [
+  "--rung",
+  "v3",
+  "--transform",
+  "z",
+  "--scale",
+  "1.5",
+  "--min-effect",
+  "0.02",
+  "--bin-mult",
+  "1.5",
+  "1.25",
+  "1",
+  "1",
+  "0.8",
+  "--neighbour",
+  "0.15",
+  "--line-weight",
+  "KOLF=0.25",
+  "--line-weight",
+  "Pan_H1=0.25",
+  "--limit",
+  "3",
+  "--seed",
+  "0",
+  "--tag",
+  "golden"
+ ],
+ "controls": "data/controls",
+ "fit_order": [
+  "CD4_Rest=1.0,H1=1.0,HCT116=1.0,HEK293T=1.0,K562=1.0,KOLF=0.25,Pan_H1=0.25"
+ ],
+ "fits": {
+  "CD4_Rest=1.0,H1=1.0,HCT116=1.0,HEK293T=1.0,K562=1.0,KOLF=0.25,Pan_H1=0.25": {
+   "dtype": "float64",
+   "sample_rows": [
+    9,
+    23,
+    42,
+    100,
+    152,
+    174,
+    289,
+    359,
+    372,
+    466,
+    479,
+    524
+   ],
+   "sha": "50dc56e6bb208d691645b182e919219b998b9f19b8a7a977ad73cb32ffb2faf1",
+   "shape": [
+    575,
+    11961
+   ]
+  }
+ },
+ "log": [
+  "neighbour rule f 0.15: 137 target-gene pairs within 5 kb",
+  "effects for lines {'CD4_Rest': 1.0, 'H1': 1.0, 'HCT116': 1.0, 'HEK293T': 1.0, 'K562': 1.0, 'KOLF': 0.25, 'Pan_H1': 0.25}",
+  "effect |log2| quantiles 50/99/99.99%: [0.08  0.47  2.073]",
+  "11961 of 11961 universe genes on the panel axis; rung v3; lines {'K562': 1.0, 'CD4_Rest': 1.0, 'HCT116': 1.0, 'HEK293T': 1.0, 'H1': 1.0, 'KOLF': 0.25, 'Pan_H1': 0.25}; per context {}; 0 panel targets without a Stage 1 row",
+  "context A: controls (18400, 18533), nnz/cell 5973",
+  "   bin multipliers: genes per bin [9988 2367 3719 2167  292]",
+  "   A 3/3 targets, 0.01G stored, 0.1 min",
+  "context B: controls (18400, 18533), nnz/cell 5519",
+  "   bin multipliers: genes per bin [10568  2414  3252  1934   365]",
+  "   B 3/3 targets, 0.01G stored, 0.2 min",
+  "context C: controls (18400, 18533), nnz/cell 5881",
+  "   bin multipliers: genes per bin [10172  2597  3439  1993   332]",
+  "   C 3/3 targets, 0.02G stored, 0.3 min",
+  "wrote D:\\Projects\\Competitions\\Virtual Cell\\eda\\out\\_golden_scratch\\tmpebbad40z\\data\\submission\\pred_golden.h5ad (0.2 GB): 3600 cells x 18533 genes, nnz/cell 5770"
+ ],
+ "matches_reference_first_rows": {
+  "equal": true,
+  "reference": "data/submission/pred_cand.h5ad",
+  "rows": 1200
+ },
+ "n_obs": 3600,
+ "nnz": 20771312,
+ "obs_context": "ef0b2fe3d834975f6f695f5fad727732f27554a09d551a0b7a2ef6e42ca3f53f",
+ "obs_target_gene": "352c6a5521a06d465f4f874a141ae2df5dd1736e50344a26cb584cc08221232a",
+ "reference_first_rows": {
+  "data": "50f693bfa0070f6531af17f3cc4f639d35defbdc957ad8f2fae7f5ad4d314512",
+  "indices": "596d1cc1b461dd8f065579920930630f1792e09e1b537973a845140e251ed7e3",
+  "indptr": "b4f2dc92dc4ef5b63f4b1fcfe1045d298ac26486cc30e31376401b875b438b27"
+ },
+ "uni_genes": "63747c62ec8833cbc12250f98d336f760cf689a7cc0e3b94d70d910b1ab21b6c",
+ "uni_targets": "9ab8a16909fcfdf16b84413bd12a4921ff586a20c95a59e4127e5d7c14f3802a"
+}

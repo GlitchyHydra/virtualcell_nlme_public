@@ -1,0 +1,15 @@
+# L4: leaderboard 0.157 (PooledEffects-Atlas-Kolf-z1.5, v3z15_kolf.vcc, 2026-10-20): z x1.5, KOLF2.1J as a sixth line (H28).
+# Settings as uploaded; tables of the "abc" snapshot. Only L5 is checked to reproduce its upload bit for bit (the earlier
+# uploads used the tables of their day, which may differ slightly from the snapshot).
+tag = "v3z15_kolf"
+controls = "data/controls"
+tables = "OUT/val_tables"
+gene_lines = "OUT/gene_lines_abc.csv"
+seed = 0
+
+[model]
+rung = "v3"
+transform = "z"
+scale = 1.5
+min_effect = 0.05
+sources = ["K562", "CD4_Rest", "HCT116", "HEK293T", "H1", "KOLF"]

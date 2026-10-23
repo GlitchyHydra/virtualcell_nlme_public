@@ -1,0 +1,15 @@
+# L1: leaderboard 0.092 (PooledEffects-Atlas, v3_h1.vcc, 2026-10-19): raw v3, H1 in the fit.
+# Settings as uploaded; tables of the "abc" snapshot. Only L5 is checked to reproduce its upload bit for bit (the earlier
+# uploads used the tables of their day, which may differ slightly from the snapshot).
+tag = "v3_h1"
+controls = "data/controls"
+tables = "OUT/val_tables"
+gene_lines = "OUT/gene_lines_abc.csv"
+seed = 0
+
+[model]
+rung = "v3"
+transform = "none"
+scale = 1.0
+min_effect = 0.05
+sources = ["K562", "CD4_Rest", "HCT116", "HEK293T", "H1"]

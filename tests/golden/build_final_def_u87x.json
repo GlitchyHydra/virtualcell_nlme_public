@@ -1,0 +1,121 @@
+{
+ "X": {
+  "data": "bc78ddd22519b0d7a33a09521046b2bcc1846f74f51584fe1cab64ad5a4dddd6",
+  "indices": "9eccc6b546fe4625bd3896395f4ac12abaebad97a18090be9612f73588c871b4",
+  "indptr": "65b2cbdf16b91344215f99077d59412d56005146631569b23bea84a16d2c3d2f"
+ },
+ "argv": [
+  "--rung",
+  "v3",
+  "--transform",
+  "z",
+  "--scale",
+  "1.5",
+  "--min-effect",
+  "0.02",
+  "--bin-mult",
+  "1.5",
+  "1.25",
+  "1",
+  "1",
+  "0.8",
+  "--neighbour",
+  "0.15",
+  "--line-weight",
+  "KOLF=0.25",
+  "--line-weight",
+  "Pan_H1=0.25",
+  "--ctx-weights",
+  "D:\\Projects\\Competitions\\Virtual Cell\\eda\\out\\ctx_weights_def_u87x.json",
+  "--limit",
+  "3",
+  "--seed",
+  "0",
+  "--tag",
+  "golden"
+ ],
+ "controls": "data/controls_final",
+ "fit_order": [
+  "CD4_Rest=1.0,H1=1.0,HCT116=1.0,HEK293T=1.0,K562=1.0,KOLF=0.25,Pan_H1=0.25",
+  "CD4_Rest=1.0,H1=1.0,HCT116=1.0,HEK293T=1.0,K562=1.0,KOLF=0.25,Pan_H1=0.25,U87x=4.0"
+ ],
+ "fits": {
+  "CD4_Rest=1.0,H1=1.0,HCT116=1.0,HEK293T=1.0,K562=1.0,KOLF=0.25,Pan_H1=0.25": {
+   "dtype": "float64",
+   "sample_rows": [
+    9,
+    23,
+    42,
+    99,
+    152,
+    173,
+    287,
+    357,
+    370,
+    463,
+    477,
+    522
+   ],
+   "sha": "ddb5457d3f5c710fe5e39478c77d1599178002bb2bc17fd718c0028278b3bc3d",
+   "shape": [
+    572,
+    12816
+   ]
+  },
+  "CD4_Rest=1.0,H1=1.0,HCT116=1.0,HEK293T=1.0,K562=1.0,KOLF=0.25,Pan_H1=0.25,U87x=4.0": {
+   "dtype": "float64",
+   "sample_rows": [
+    1,
+    12,
+    18,
+    50,
+    99,
+    221,
+    312,
+    413,
+    432,
+    480,
+    482,
+    492
+   ],
+   "sha": "142f4d7aba0a6b4f75761e7abc8112c6ea384ac469302808bea24bd6151afef0",
+   "shape": [
+    572,
+    12816
+   ]
+  }
+ },
+ "log": [
+  "neighbour rule f 0.15: 154 target-gene pairs within 5 kb",
+  "effects for lines {'CD4_Rest': 1.0, 'H1': 1.0, 'HCT116': 1.0, 'HEK293T': 1.0, 'K562': 1.0, 'KOLF': 0.25, 'Pan_H1': 0.25}",
+  "effects for lines {'CD4_Rest': 1.0, 'H1': 1.0, 'HCT116': 1.0, 'HEK293T': 1.0, 'K562': 1.0, 'KOLF': 0.25, 'Pan_H1': 0.25, 'U87x': 4.0}",
+  "effect |log2| quantiles 50/99/99.99%: [0.084 0.506 2.206]",
+  "12816 of 12816 universe genes on the panel axis; rung v3; lines {'K562': 1.0, 'CD4_Rest': 1.0, 'HCT116': 1.0, 'HEK293T': 1.0, 'H1': 1.0, 'KOLF': 0.25, 'Pan_H1': 0.25}; per context {'E': {'U87x': 4.0}}; 0 panel targets without a Stage 1 row",
+  "context D: controls (18400, 18533), nnz/cell 5679",
+  "   bin multipliers: genes per bin [10182  2327  3851  1928   245]",
+  "   D 3/3 targets, 0.01G stored, 0.1 min",
+  "context E: controls (18400, 18533), nnz/cell 5522",
+  "   bin multipliers: genes per bin [10562  2537  3283  1837   314]",
+  "   E 3/3 targets, 0.01G stored, 0.2 min",
+  "context F: controls (18400, 18533), nnz/cell 5481",
+  "   bin multipliers: genes per bin [10730  2361  3159  1929   354]",
+  "   F 3/3 targets, 0.02G stored, 0.3 min",
+  "wrote D:\\Projects\\Competitions\\Virtual Cell\\eda\\out\\_golden_scratch\\tmp_dyko92f\\data\\submission\\pred_golden.h5ad (0.2 GB): 3600 cells x 18533 genes, nnz/cell 5574"
+ ],
+ "matches_reference_first_rows": {
+  "equal": true,
+  "reference": "data/submission/pred_final_u87x.h5ad",
+  "rows": 1200
+ },
+ "n_obs": 3600,
+ "nnz": 20067636,
+ "obs_context": "89d30f152f7ed724fe7f81048796f389c1418a8168843f9cf70eceaa40874e69",
+ "obs_target_gene": "16b4c744e78a33da4e29fdcc1ac232d87d3dfdb0e660cf980b9efce76826d1fa",
+ "reference_first_rows": {
+  "data": "d302ef8f163ea927e1d41db47754c1cfd0cdb88d3e825fd76e96f8d8083f200f",
+  "indices": "9ec75b69fd82bb0cc59196fe487103c5b0a32eb81a6f5bfe9551273a6c21148a",
+  "indptr": "5c1f8a74196dcbd57547c95a7f638bab4cbad8b934b58d146950228377f88d87"
+ },
+ "uni_genes": "1d6f7dd441869d252b25876c76fe20cb8234de8e1aeb08d5eabb29c24d2c4383",
+ "uni_targets": "abbd3055e8af68eb3853916bab7037f4fae32a6b8789c3bd1390f6b4b7743108"
+}

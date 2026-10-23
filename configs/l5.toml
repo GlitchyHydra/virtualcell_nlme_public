@@ -1,0 +1,23 @@
+# L5: leaderboard 0.1705 on A/B/C (entry kwEQQeuqzyVCXUgzQMmU, cand.vcc, 2026-10-21): z x1.5, per-bin multipliers,
+# neighbour cap 0.15, floor 0.02, KOLF 0.25, Pan_H1 0.25 (H38 + H40). The final model is L5 + the same-line rule.
+# Snapshot "abc": the validation tables in OUT/val_tables and the A/B/C gene universe (11,961 genes).
+# Golden: tests/golden/build_l5.json (the first targets equal data/submission/pred_cand.h5ad bit for bit).
+tag = "cand"
+controls = "data/controls"
+tables = "OUT/val_tables"
+gene_lines = "OUT/gene_lines_abc.csv"
+seed = 0
+
+[model]
+rung = "v3"
+transform = "z"
+scale = 1.5
+kappa = 1.0
+min_effect = 0.02
+bin_mult = [1.5, 1.25, 1.0, 1.0, 0.8]
+neighbour = 0.15
+sources = ["K562", "CD4_Rest", "HCT116", "HEK293T", "H1"]
+
+[model.line_weights]
+KOLF = 0.25
+Pan_H1 = 0.25
